@@ -1,11 +1,25 @@
-﻿string path = @"piupiu.txt";
+string path = @"piupiu.txt";
 int[] vect;
 int result = 0;
-bool simmetric(int[][] mat, int n)
+bool IsSimmetric(int[][] mat, int n)
 {
     for (int i = 0; i < n; i++)
-        for (int j = 0; j < n; j++) if (mat[i][j] != mat[j][i]) return false;
+        for (int j = i + 1 ; j < n; j++) if (mat[i][j] != mat[j][i]) return false;
     return true;
+}
+void CalculateLenthVector(int[] vector, int[][] mat, int diment)
+{
+    if (IsSimmetric (mat, diment))
+        {
+            int[] secVect = new int[diment];
+            for (int i = 0; i < diment; i++)
+                for (int j = 0; j < diment; j++)
+                    secVect[i] += vect[j] * mat[j][i];
+            for (int i = 0; i < diment; i++)
+                result += secVect[i] * vect[i];
+            Console.WriteLine($"The dismetion of an {diment} - dismetnional space: {Math.Sqrt(result)}");
+        }
+    else Console.WriteLine("Something is wrong, check the input data");
 }
 try
 {
@@ -18,16 +32,7 @@ try
     }
     vect = sr.ReadLine().Split(' ').Select(x => Convert.ToInt32(x)).ToArray();
     sr.Close();
-    if (simmetric (matrix, n))
-    {
-        int[] secVect = new int[n];
-        for (int i = 0; i < n; i++)
-            for (int j = 0; j < n; j++)
-                secVect[i] += vect[j] * matrix[j][i];
-        for (int i = 0; i < n; i++)
-            result += secVect[i] * vect[i];
-        Console.WriteLine($"The dismetion of an {n} - dismetnional space: {Math.Sqrt(result)}");
-    }
+    CalculateLenthVector(vect, matrix, n);
 }
 catch(Exception e)
 {
