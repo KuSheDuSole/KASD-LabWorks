@@ -1,4 +1,4 @@
-﻿void CreateComplexNumber(ref ComplexNuber number)
+void CreateComplexNumber(ref ComplexNuber number)
 {
     Console.WriteLine("Enter complex part: ");
     number.complex = Convert.ToDouble(Console.ReadLine());
@@ -142,7 +142,7 @@ while (true)
             DivideComplexNumber(ref myNumber, ref mySecNumber);
             break;
         case "f":
-            GetAbsolutionValue(ref myNumber);
+            Console.WriteLine($"Absolution: {GetAbsolutionValue(ref myNumber)}\n");
             break;
         case "g":
             GetArgument(ref myNumber);
