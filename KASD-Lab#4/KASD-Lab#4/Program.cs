@@ -5,8 +5,8 @@ using System.Xml.Linq;
 
 public class MyArrayList<T>
 {
-    static int size;
-    static T[] elementData;
+    private int size;
+    private T[] elementData;
     public MyArrayList()
     {
         size = 0;
