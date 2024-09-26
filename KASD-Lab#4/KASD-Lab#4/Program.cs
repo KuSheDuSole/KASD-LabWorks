@@ -9,6 +9,7 @@ public class MyArrayList<T>
     private T[] elementData;
     public MyArrayList()
     {
+        elementData = new T[1];
         size = 0;
     }
     public MyArrayList(T[] array)
