@@ -151,7 +151,7 @@ namespace MyVectorLib
         }
         public void Add(int index, T element)
         {
-            if (index < 0 || index > elementCount) throw new ArgumentOutOfRangeException("index");
+            if (index < 0 || index > elementCount) throw new Exception("Please, enter correct index");
             if (elementCount == elementData.Length) Resize();
             for (int i = elementCount - 1; i >= index; i--) elementData[i + 1] = elementData[i];
             elementData[index] = element;
@@ -159,7 +159,7 @@ namespace MyVectorLib
         }
         public void AddAll(int index, T[] array)
         {
-            if (index < 0 || index > elementCount) throw new ArgumentOutOfRangeException("index");
+            if (index < 0 || index > elementCount) throw new Exception("Please, enter correct index");
             int j = 0;
             while (elementCount + array.Length > elementData.Length) Resize();
             for (int i = elementCount - 1; i >= index; i--) elementData[i + array.Length] = elementData[i];
@@ -168,7 +168,7 @@ namespace MyVectorLib
         }
         public T Get(int index)
         {
-            if (index < 0 || index > elementCount) throw new ArgumentOutOfRangeException("index");
+            if (index < 0 || index > elementCount) throw new Exception("Please, enter correct index");
             return elementData[index];
         }
         public int IndexOf(T obj)
@@ -183,21 +183,21 @@ namespace MyVectorLib
         }
         public T RemoveByIndex(int index)
         {
-            if (index < 0 || index > elementCount) throw new ArgumentOutOfRangeException("index");
+            if (index < 0 || index > elementCount) throw new Exception("Please, enter correct index");
             T element = elementData[index];
             Remove(element);
             return element;
         }
         public void Set(int index, T element)
         {
-            if (index < 0 || index > elementCount) throw new ArgumentOutOfRangeException("index");
+            if (index < 0 || index > elementCount) throw new Exception("Please, enter correct index");
             elementData[index] = element;
         }
         public T[] SubList(int fromIndex, int toIndex)
         {
             int j = 0;
-            if (fromIndex < 0 || fromIndex > elementCount) throw new ArgumentOutOfRangeException("fromIndex");
-            if (toIndex < 0 || toIndex > elementCount) throw new ArgumentOutOfRangeException("toIndex");
+            if (fromIndex < 0 || fromIndex > elementCount) throw new Exception("Please, enter correct start index");
+            if (toIndex < 0 || toIndex > elementCount) throw new Exception("Please, enter correct end index");
             T[] newArray = new T[toIndex - fromIndex];
             for (int i = fromIndex; i < toIndex; i++) newArray[j++] = elementData[i];
             return newArray;
@@ -212,13 +212,13 @@ namespace MyVectorLib
         }
         public void RemoveElementAt(int pos)
         {
-            if (pos < 0 || pos > elementCount) throw new ArgumentOutOfRangeException("pos");
+            if (pos < 0 || pos > elementCount) throw new Exception("Please, enter correct position");
             Remove(elementData[pos]);
         }
         public void RemoveRange(int begin, int end)
         {
-            if (begin < 0 || begin > elementCount) throw new ArgumentOutOfRangeException("begin");
-            if (end < 0 || end > elementCount) throw new ArgumentOutOfRangeException("end");
+            if (begin < 0 || begin > elementCount) throw new Exception("Please, enter correct start index");
+            if (end < 0 || end > elementCount) throw new Exception("Please, enter correct end index");
             for (int i = begin; i < end; i++) Remove(elementData[i]);
         }
         public void Print()
