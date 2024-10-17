@@ -133,7 +133,7 @@ public class MyArrayList<T>
     }
     public void Add(int index, T element)
     {
-        if (index < 0 || index > size) throw new Exception("Please, enter correct index");
+        if (index < 0 || index > size) throw new ArgumentOutOfRangeException("Please, enter correct index");
         if (size == elementData.Length) Resize();
         for (int i = size - 1; i >= index; i--) elementData[i + 1] = elementData[i];
         elementData[index] = element;
@@ -141,7 +141,7 @@ public class MyArrayList<T>
     }
     public void AddAll(int index, T[] array)
     {
-        if (index < 0 || index > size) throw new Exception("Please, enter correct index");
+        if (index < 0 || index > size) throw new ArgumentOutOfRangeException("Please, enter correct index");
         int j = 0;
         while (size + array.Length > elementData.Length) Resize();
         for (int i = size - 1; i >= index; i--) elementData[i + array.Length] = elementData[i];
@@ -150,7 +150,7 @@ public class MyArrayList<T>
     }
     public T Get(int index)
     {
-        if (index < 0 || index > size) throw new Exception("Please, enter correct index");
+        if (index < 0 || index > size) throw new ArgumentOutOfRangeException("Please, enter correct index");
         return elementData[index];
     }
     public int IndexOf(T obj)
@@ -165,21 +165,21 @@ public class MyArrayList<T>
     }
     public T RemoveByIndex(int index)
     {
-        if (index < 0 || index > size) throw new Exception("Please, enter correct index");
+        if (index < 0 || index > size) throw new ArgumentOutOfRangeException("Please, enter correct index");
         T element = elementData[index];
         Remove(element);
         return element;
     }
     public void Set(int index, T element)
     {
-        if (index < 0 || index > size) throw new Exception("Please, enter correct index");
+        if (index < 0 || index > size) throw new ArgumentOutOfRangeException("Please, enter correct index");
         elementData[index] = element;
     }
     public T[] SubList(int fromIndex, int toIndex)
     {
         int j = 0;
-        if (fromIndex < 0 || fromIndex > size) throw new Exception("Please, enter correct start index");
-        if (toIndex < 0 || toIndex > size) throw new Exception("Please, enter correct end index");
+        if (fromIndex < 0 || fromIndex > size) throw new ArgumentOutOfRangeException("Please, enter correct start index");
+        if (toIndex < 0 || toIndex > size) throw new ArgumentOutOfRangeException("Please, enter correct end index");
         T[] newArray = new T[toIndex - fromIndex];
         for (int i = fromIndex; i < toIndex; i++) newArray[j++] = elementData[i];
         return newArray;
