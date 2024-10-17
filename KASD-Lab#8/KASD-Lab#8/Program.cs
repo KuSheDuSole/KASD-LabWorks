@@ -1,55 +1,24 @@
 ﻿using MyVectorLib;
-using System.Reflection.Metadata;
 
-public class Project
+namespace MyStackLib
 {
-    public class MyStack<T>: MyVector<T>
-    {
-        private MyVector<T> stack;
-        private int top;
-
-        public MyStack()
-        {
-            top = -1;
-            stack = new MyVector<T>(1);
-        }
-        public void Push(T element)
-        {
-            stack.Add(element);
-            top++;
-        }
+    public class MyStack<T> : MyVector<T>
+    { 
+        public MyStack() : base(1, 5) { }
+        
+        public void Push(T element) => Add(element);
+        
         public T Pop()
         {
-            T element = stack.Get(top);
-            stack.RemoveByIndex(top);
-            top--;
+            T element = RemoveByIndex(Size() - 1);
             return element;
         }
-        public T Peek()
-        {
-            return stack.Get(top);
-        }
-        public new bool IsEmpty()
-        {
-            return stack.IsEmpty();
-        }
+        public T Peek() => LastElement();
+        
         public int Search(T item)
         {
-            if (stack.IndexOf(item) == -1) return -1;
-            return top - stack.IndexOf(item) + 1;
+            return Size() - IndexOf(item);
         }
-        public new void Print()
-        {
-            stack.Print();
-        }
+        
     }
-    //static void Main(string[] args)
-    //{
-    //    MyStack<int> stack = new MyStack<int>();
-    //    stack.Push(3);
-    //    stack.Push(1);
-    //    stack.Push(7);
-    //    stack.Push(2);
-    //    stack.Print();
-    //}
 }
