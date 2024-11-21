@@ -1,9 +1,10 @@
-﻿namespace MyPriorityQueue {
-    public class MyPriorityQueue<T> where T: IComparable<T>
+namespace MyPriorityQueue
+{
+    public class MyPriorityQueue<T> where T : IComparable<T>
     {
         private T[] queue;
         private int size = 0;
-        private IComparer<T> _comparer;
+        private Comparer<T> _comparer;
 
         public MyPriorityQueue()
         {
@@ -38,7 +39,7 @@
             queue[firstIndex] = queue[secondIndex];
             queue[secondIndex] = temp;
         }
-        public void Resize() => Array.Resize(ref queue, queue.Length <64 ?queue.Length * 2 + 1: queue.Length * 3 / 2 + 1);
+        public void Resize() => Array.Resize(ref queue, queue.Length < 64 ? queue.Length * 2 + 1 : queue.Length * 3 / 2 + 1);
         public void Add(T item)
         {
             if (size == queue.Length) Resize();
@@ -96,7 +97,7 @@
                     i--;
                 }
             }
-                
+
         }
         public T[] ToArray()
         {
@@ -153,8 +154,9 @@
             {
                 size--;
                 Array.Resize(ref queue, size);
+                return;
             }
-            Swap(index, queue.Length - 1);
+            Swap(index, size - 1);
             size--;
             Array.Resize(ref queue, size);
             for (int i = size / 2; i >= 0; i--) Heapify(i);
