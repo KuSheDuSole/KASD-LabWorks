@@ -1,0 +1,14 @@
+C:\Users\KuSheDuSole\source\repos\KASD-Lab#14\KASD-Lab#14\bin\Debug\net8.0\KASD-Lab#14.exe
+C:\Users\KuSheDuSole\source\repos\KASD-Lab#14\KASD-Lab#14\bin\Debug\net8.0\KASD-Lab#14.deps.json
+C:\Users\KuSheDuSole\source\repos\KASD-Lab#14\KASD-Lab#14\bin\Debug\net8.0\KASD-Lab#14.runtimeconfig.json
+C:\Users\KuSheDuSole\source\repos\KASD-Lab#14\KASD-Lab#14\bin\Debug\net8.0\KASD-Lab#14.dll
+C:\Users\KuSheDuSole\source\repos\KASD-Lab#14\KASD-Lab#14\bin\Debug\net8.0\KASD-Lab#14.pdb
+C:\Users\KuSheDuSole\source\repos\KASD-Lab#14\KASD-Lab#14\obj\Debug\net8.0\KASD-Lab#14.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KuSheDuSole\source\repos\KASD-Lab#14\KASD-Lab#14\obj\Debug\net8.0\KASD-Lab#14.AssemblyInfoInputs.cache
+C:\Users\KuSheDuSole\source\repos\KASD-Lab#14\KASD-Lab#14\obj\Debug\net8.0\KASD-Lab#14.AssemblyInfo.cs
+C:\Users\KuSheDuSole\source\repos\KASD-Lab#14\KASD-Lab#14\obj\Debug\net8.0\KASD-Lab#14.csproj.CoreCompileInputs.cache
+C:\Users\KuSheDuSole\source\repos\KASD-Lab#14\KASD-Lab#14\obj\Debug\net8.0\KASD-Lab#14.dll
+C:\Users\KuSheDuSole\source\repos\KASD-Lab#14\KASD-Lab#14\obj\Debug\net8.0\refint\KASD-Lab#14.dll
+C:\Users\KuSheDuSole\source\repos\KASD-Lab#14\KASD-Lab#14\obj\Debug\net8.0\KASD-Lab#14.pdb
+C:\Users\KuSheDuSole\source\repos\KASD-Lab#14\KASD-Lab#14\obj\Debug\net8.0\KASD-Lab#14.genruntimeconfig.cache
+C:\Users\KuSheDuSole\source\repos\KASD-Lab#14\KASD-Lab#14\obj\Debug\net8.0\ref\KASD-Lab#14.dll
