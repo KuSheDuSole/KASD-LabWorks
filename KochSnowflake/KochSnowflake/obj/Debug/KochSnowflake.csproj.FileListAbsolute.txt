@@ -1,0 +1,10 @@
+C:\Users\KuSheDuSole\source\repos\KochSnowflake\KochSnowflake\bin\Debug\KochSnowflake.exe.config
+C:\Users\KuSheDuSole\source\repos\KochSnowflake\KochSnowflake\bin\Debug\KochSnowflake.exe
+C:\Users\KuSheDuSole\source\repos\KochSnowflake\KochSnowflake\bin\Debug\KochSnowflake.pdb
+C:\Users\KuSheDuSole\source\repos\KochSnowflake\KochSnowflake\obj\Debug\KochSnowflake.csproj.AssemblyReference.cache
+C:\Users\KuSheDuSole\source\repos\KochSnowflake\KochSnowflake\obj\Debug\KochSnowflake.Form1.resources
+C:\Users\KuSheDuSole\source\repos\KochSnowflake\KochSnowflake\obj\Debug\KochSnowflake.Properties.Resources.resources
+C:\Users\KuSheDuSole\source\repos\KochSnowflake\KochSnowflake\obj\Debug\KochSnowflake.csproj.GenerateResource.cache
+C:\Users\KuSheDuSole\source\repos\KochSnowflake\KochSnowflake\obj\Debug\KochSnowflake.csproj.CoreCompileInputs.cache
+C:\Users\KuSheDuSole\source\repos\KochSnowflake\KochSnowflake\obj\Debug\KochSnowflake.exe
+C:\Users\KuSheDuSole\source\repos\KochSnowflake\KochSnowflake\obj\Debug\KochSnowflake.pdb
